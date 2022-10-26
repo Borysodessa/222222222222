@@ -1,16 +1,9 @@
+
+import data from "data/data.json"
+import {StatisticTitle} from "./Statistics/statisticsTitle/statisticsTitle"
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+    <StatisticTitle title={data} />
+  )
 };
